@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bandstand — chord charts, backing tracks and practice tools</title>
+<meta name="description" content="Bandstand is a chord-chart reader, practice tool and backing-track engine for working musicians. A real sampled rhythm section, generated on your machine. Linux, Windows, macOS, Android, iPadOS. Local-first, Apache-2.0.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Main">
+    <a class="brand" href="#top">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 20V11a7 7 0 0 1 14 0v9"/><path d="M9 20v-6M12 20v-9M15 20v-6"/></svg>
+      <span>Bandstand</span>
+    </a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#import">Bring your book</a>
+      <a href="#download">Download</a>
+      <a href="#soundbank">Sound</a>
+      <a href="#license">License</a>
+    </div>
+    <a class="btn btn-outline btn-sm" href="https://github.com/vladimirpesic/bandstand">GitHub</a>
+  </nav>
+</header>
+<main id="top">
+<section class="hero wrap">
+  <p class="eyebrow">Version 1.0.0 &middot; Apache-2.0 &middot; no cloud, no accounts</p>
+  <h1>The place you play from.</h1>
+  <p class="lede">Bandstand is a chord-chart reader, practice tool and backing-track engine
+  for working musicians. A real, sampled rhythm section behind chords you already
+  know — walking bass, comping piano, brushes — generated on your machine,
+  not streamed from one.</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="#download">Download Bandstand</a>
+    <a class="btn btn-outline" href="https://github.com/vladimirpesic/bandstand">Source on GitHub</a>
+  </div>
+  <ul class="hero-meta">
+    <li>Linux</li><li>Windows</li><li>macOS</li><li>Android</li><li>iPadOS</li>
+  </ul>
+</section>
+<section id="features" class="section">
+  <div class="wrap">
+    <h2>Built like a band, not a preset</h2>
+    <p class="section-lede">Every backing track is generated part by part, from corpora of how
+    real players play — then rendered through a real sampled soundbank.</p>
+    <div class="card-grid">
+      <article class="card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 10v4M8 7v10M12 4v16M16 7v10M20 10v4"/></svg>
+        <h3>A rhythm section that sounds like one</h3>
+        <p>A 148&nbsp;MB General MIDI soundfont — Frank Wen's FluidR3, the de-facto free
+        standard — played by a real SF2 sampler in a Rust audio core.</p>
+      </article>
+      <article class="card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l4-6 4 4 4-7 4 4 2-2"/></svg>
+        <h3>Walking bass, from real lines</h3>
+        <p>Bass lines are tiled from a corpus of transcribed walking cells and scored
+        for how well the line walks. It sounds like a bassist because it learned from them.</p>
+      </article>
+      <article class="card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M9 5v14M15 5v14M3 12h18"/></svg>
+        <h3>Comping that knows when — and what</h3>
+        <p>A corpus of rhythmic cells decides when to hit; a voicing engine decides
+        which notes. Two independent knobs on the pianist behind you.</p>
+      </article>
+      <article class="card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="14" r="6"/><path d="M4 8l5 4M20 8l-5 4"/></svg>
+        <h3>Drums with fills and variation</h3>
+        <p>Pattern-based drums with fills and variation slots, so the groove
+        breathes instead of looping.</p>
+      </article>
+      <article class="card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4L7 20h10z"/><path d="M12 13l4-6"/></svg>
+        <h3>Practice that pushes back</h3>
+        <p>Tempo ramp, key cycling and loop practice — the three features that
+        actually make you faster, built into the transport.</p>
+      </article>
+      <article class="card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 9h16M4 12h16M4 15h16M4 18h16"/><circle cx="10" cy="13.5" r="2.2" fill="currentColor" stroke="none"/><path d="M12.2 13.5V6.5"/></svg>
+        <h3>The melody on the stand</h3>
+        <p>Written parts imported from MusicXML sit next to the chords —
+        Bandstand keeps what other chart apps throw away.</p>
+      </article>
+      <article class="card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v9m-3-3l3 3 3-3"/><path d="M4 17h16M6 21h12"/></svg>
+        <h3>Page-turner ready</h3>
+        <p>Bluetooth foot pedals (AirTurn and friends) drive next/previous.
+        Both hands stay on the instrument.</p>
+      </article>
+      <article class="card">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7"/><path d="M6 10v10h12V10"/></svg>
+        <h3>Yours, offline</h3>
+        <p>Songs are plain JSON in a local library. No cloud, no accounts,
+        no telemetry, no subscription.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<section id="import" class="section">
+  <div class="wrap">
+    <h2>Bring your book</h2>
+    <p class="section-lede">If you already keep your charts in iReal&nbsp;Pro, you already have a
+    Bandstand library. One paste imports a whole playlist — tune by tune, with
+    repeats, endings and road maps intact.</p>
+    <div class="split">
+      <ul class="format-list">
+        <li>
+          <b>iReal Pro playlists</b>
+          <p>Paste an <code>irealbook://</code> URL and an entire book arrives at once.
+          The scheme carries chords, structure, tempo and the playlist name.</p>
+        </li>
+        <li>
+          <b>MusicXML — <code>.xml</code> and <code>.mxl</code></b>
+          <p>Chords, key, time, repeats and the melody, from MuseScore, Sibelius,
+          Finale and friends. The part with the chords is found for you.</p>
+        </li>
+        <li>
+          <b>Plain text</b>
+          <p>Type a chart where you are. Bar lines and chord symbols are enough —
+          Bandstand works out which format it is reading.</p>
+        </li>
+      </ul>
+      <div>
+        <div class="chart-sample">| Cmaj7 | A7b9 | Dm7 | G7 |</div>
+        <p class="side-note">Bandstand is a reader and a practice engine, not a chart
+        marketplace — keep iReal&nbsp;Pro for the editing you already know. The book
+        stays where you built it; this is where it gets played.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="download" class="section">
+  <div class="wrap">
+    <h2>Download</h2>
+    <p class="section-lede">Built from the tag by GitHub Actions — the same run that attaches
+    these files. Version 1.0.0.</p>
+    <div class="download-grid">
+      <a class="download-card" data-platform="Windows" href="https://github.com/vladimirpesic/bandstand/releases/latest/download/Bandstand-Windows-x64.zip">
+        <span class="dl-os">Windows</span>
+        <span class="dl-sub">10/11, x64</span>
+        <span class="dl-file">Bandstand-Windows-x64.zip</span>
+        <span class="dl-badge">Your platform</span>
+        <span class="dl-cta">Download</span>
+      </a>
+      <a class="download-card" data-platform="Linux" href="https://github.com/vladimirpesic/bandstand/releases/latest/download/Bandstand-Linux-x64.tar.gz">
+        <span class="dl-os">Linux</span>
+        <span class="dl-sub">x64</span>
+        <span class="dl-file">Bandstand-Linux-x64.tar.gz</span>
+        <span class="dl-badge">Your platform</span>
+        <span class="dl-cta">Download</span>
+      </a>
+      <a class="download-card" data-platform="macOS" href="https://github.com/vladimirpesic/bandstand/releases/latest/download/Bandstand-macOS.zip">
+        <span class="dl-os">macOS</span>
+        <span class="dl-sub">12+</span>
+        <span class="dl-file">Bandstand-macOS.zip</span>
+        <span class="dl-badge">Your platform</span>
+        <span class="dl-cta">Download</span>
+      </a>
+      <a class="download-card" data-platform="Android" href="https://github.com/vladimirpesic/bandstand/releases/latest/download/Bandstand-Android.apk">
+        <span class="dl-os">Android</span>
+        <span class="dl-sub">8+</span>
+        <span class="dl-file">Bandstand-Android.apk</span>
+        <span class="dl-badge">Your platform</span>
+        <span class="dl-cta">Download</span>
+      </a>
+      <div class="download-card disabled" data-platform="iOS">
+        <span class="dl-os">iPadOS / iOS</span>
+        <span class="dl-sub">16+</span>
+        <span class="dl-file">App Store listing pending</span>
+        <span class="dl-cta">Needs Apple signing first</span>
+      </div>
+      <a class="download-card" href="https://github.com/vladimirpesic/bandstand/releases">
+        <span class="dl-os">All releases</span>
+        <span class="dl-sub">Every platform, every version</span>
+        <span class="dl-cta">Browse</span>
+      </a>
+    </div>
+    <p class="small-print"><strong>Unsigned, honestly.</strong> macOS: right-click the app and
+    choose <em>Open</em> the first time (Gatekeeper). Windows: <em>More info → Run
+    anyway</em> (SmartScreen). Android: the 1.0.0 APK uses a development key — install
+    it from the file; a proper signing key arrives with a Play listing.</p>
+  </div>
+</section>
+<section id="soundbank" class="section">
+  <div class="wrap">
+    <h2>The sound it comes with</h2>
+    <p class="section-lede">Bandstand's recommended bank is Frank Wen's FluidR3 GM — 148 MB of
+    General MIDI, MIT-licensed, the same bytes Debian ships. The app offers to fetch
+    it on first run: with your say-so, resumable, and verified byte-for-byte against
+    the digest below before it is ever installed.</p>
+    <dl class="facts">
+      <dt>Name</dt><dd>FluidR3_GM.sf2</dd>
+      <dt>Size</dt><dd>148,398,306 bytes (141.5 MiB)</dd>
+      <dt>Licence</dt><dd>MIT — Frank Wen's FluidR3</dd>
+      <dt>Served from</dt><dd>GitHub release assets, with the repository's LFS object as fallback</dd>
+    </dl>
+    <p class="checksum"><b>SHA-256</b><br>
+    74594e8f4250680adf590507a306655a299935343583256f3b722c48a1bc1cb0</p>
+    <p><a href="https://github.com/vladimirpesic/bandstand/releases/latest/download/FluidR3_GM.sf2">Download
+    the soundbank directly</a> — mirrors are tried in order, and a file that fails the
+    digest by one byte is never installed.</p>
+  </div>
+</section>
+<section id="license" class="section">
+  <div class="wrap">
+    <h2>License &amp; credits</h2>
+    <p class="section-lede">Open source, open formats, honest dependencies.</p>
+    <p>Bandstand's code is
+    <a href="https://github.com/vladimirpesic/bandstand/blob/main/LICENSE">Apache-2.0</a>.
+    The soundbank is MIT (Frank Wen). It is built on Flutter (BSD-3-Clause) and a Rust
+    workspace of MIT/Apache-2.0 crates — thank you, all of you.</p>
+    <p>The charts you import are yours. They never leave the machine.</p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">Bandstand &middot; Apache-2.0 &middot; &copy; <span>2026</span> Vladimir
+  Pesic &mdash; this site is built from the
+  <a href="https://github.com/vladimirpesic/bandstand">repository</a> and served by GitHub Pages.</div>
+</footer>
+<script>
+(function () {
+  var ua = navigator.userAgent, p = null;
+  if (/Android/i.test(ua)) p = 'Android';
+  else if (/iPhone|iPad|iPod/i.test(ua)) p = 'iOS';
+  else if (/Windows/i.test(ua)) p = 'Windows';
+  else if (/Mac/i.test(ua)) p = 'macOS';
+  else if (/Linux/i.test(ua)) p = 'Linux';
+  if (p) {
+    var card = document.querySelector('[data-platform="' + p + '"]');
+    if (card) card.classList.add('match');
+  }
+})();
+</script>
+</body>
+</html>

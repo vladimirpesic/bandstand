@@ -1,0 +1,46 @@
+name: bandstand
+description: "Chord charts, backing tracks and practice tools for working musicians"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.2
+
+dependencies:
+  archive: ^4.0.9
+  # SHA-256 of a downloaded soundbank, so that a half-fetched or altered bank
+  # is never installed. Pure Dart, no platform code.
+  crypto: ^3.0.6
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^3.4.2
+  flutter_rust_bridge: 2.13.0
+  path_provider: ^2.1.6
+  # PDF chart export (ADR 0010). Pure Dart, no platform code; `printing` is
+  # deliberately *not* here — the file manager opens the file we write.
+  pdf: ^3.11.0
+  # MusicXML import (ADR 0011). Pure Dart.
+  xml: ^6.5.0
+  rust_lib_bandstand:
+    path: rust_builder
+  wakelock_plus: ^1.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  # Used only by the domain purity test, to resolve a relative import and see
+  # where it actually lands.
+  path: ^1.9.0
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/bass_corpus.json
+    - assets/chord_diagrams.json
+    - assets/chord_types.json
+    - assets/comping_cells.json
+    - assets/drum_patterns.json
+    - assets/scales.json

@@ -1,0 +1,1110 @@
+{
+  "schemaVersion": 1,
+  "instruments": [
+    {
+      "id": "guitar",
+      "displayName": "Guitar",
+      "tuning": [
+        40,
+        45,
+        50,
+        55,
+        59,
+        64
+      ],
+      "shapes": [
+        {
+          "type": "",
+          "frets": [
+            -1,
+            3,
+            2,
+            0,
+            1,
+            0
+          ],
+          "baseFret": 1,
+          "root": "C",
+          "rootString": 1
+        },
+        {
+          "type": "",
+          "frets": [
+            -1,
+            -1,
+            0,
+            2,
+            3,
+            2
+          ],
+          "baseFret": 1,
+          "root": "D",
+          "rootString": 2
+        },
+        {
+          "type": "",
+          "frets": [
+            0,
+            2,
+            2,
+            1,
+            0,
+            0
+          ],
+          "baseFret": 1,
+          "root": "E",
+          "rootString": 0
+        },
+        {
+          "type": "",
+          "frets": [
+            3,
+            2,
+            0,
+            0,
+            0,
+            3
+          ],
+          "baseFret": 1,
+          "root": "G",
+          "rootString": 0
+        },
+        {
+          "type": "",
+          "frets": [
+            -1,
+            0,
+            2,
+            2,
+            2,
+            0
+          ],
+          "baseFret": 1,
+          "root": "A",
+          "rootString": 1
+        },
+        {
+          "type": "m",
+          "frets": [
+            -1,
+            -1,
+            0,
+            2,
+            3,
+            1
+          ],
+          "baseFret": 1,
+          "root": "D",
+          "rootString": 2
+        },
+        {
+          "type": "m",
+          "frets": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "baseFret": 1,
+          "root": "E",
+          "rootString": 0
+        },
+        {
+          "type": "m",
+          "frets": [
+            -1,
+            0,
+            2,
+            2,
+            1,
+            0
+          ],
+          "baseFret": 1,
+          "root": "A",
+          "rootString": 1
+        },
+        {
+          "type": "7",
+          "frets": [
+            -1,
+            3,
+            2,
+            3,
+            1,
+            0
+          ],
+          "baseFret": 1,
+          "root": "C",
+          "rootString": 1
+        },
+        {
+          "type": "7",
+          "frets": [
+            -1,
+            -1,
+            0,
+            2,
+            1,
+            2
+          ],
+          "baseFret": 1,
+          "root": "D",
+          "rootString": 2
+        },
+        {
+          "type": "7",
+          "frets": [
+            0,
+            2,
+            0,
+            1,
+            0,
+            0
+          ],
+          "baseFret": 1,
+          "root": "E",
+          "rootString": 0
+        },
+        {
+          "type": "7",
+          "frets": [
+            3,
+            2,
+            0,
+            0,
+            0,
+            1
+          ],
+          "baseFret": 1,
+          "root": "G",
+          "rootString": 0
+        },
+        {
+          "type": "7",
+          "frets": [
+            -1,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          "baseFret": 1,
+          "root": "A",
+          "rootString": 1
+        },
+        {
+          "type": "7",
+          "frets": [
+            1,
+            -1,
+            1,
+            2,
+            1,
+            -1
+          ],
+          "baseFret": 1,
+          "root": "F",
+          "rootString": 0
+        },
+        {
+          "type": "maj7",
+          "frets": [
+            -1,
+            3,
+            2,
+            0,
+            0,
+            0
+          ],
+          "baseFret": 1,
+          "root": "C",
+          "rootString": 1
+        },
+        {
+          "type": "maj7",
+          "frets": [
+            -1,
+            -1,
+            0,
+            2,
+            2,
+            2
+          ],
+          "baseFret": 1,
+          "root": "D",
+          "rootString": 2
+        },
+        {
+          "type": "maj7",
+          "frets": [
+            -1,
+            0,
+            2,
+            1,
+            2,
+            0
+          ],
+          "baseFret": 1,
+          "root": "A",
+          "rootString": 1
+        },
+        {
+          "type": "maj7",
+          "frets": [
+            3,
+            -1,
+            0,
+            0,
+            0,
+            2
+          ],
+          "baseFret": 1,
+          "root": "G",
+          "rootString": 0
+        },
+        {
+          "type": "m7",
+          "frets": [
+            -1,
+            -1,
+            0,
+            2,
+            1,
+            1
+          ],
+          "baseFret": 1,
+          "root": "D",
+          "rootString": 2
+        },
+        {
+          "type": "m7",
+          "frets": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "baseFret": 1,
+          "root": "E",
+          "rootString": 0
+        },
+        {
+          "type": "m7",
+          "frets": [
+            -1,
+            0,
+            2,
+            0,
+            1,
+            0
+          ],
+          "baseFret": 1,
+          "root": "A",
+          "rootString": 1
+        },
+        {
+          "type": "6",
+          "frets": [
+            -1,
+            0,
+            2,
+            2,
+            2,
+            2
+          ],
+          "baseFret": 1,
+          "root": "A",
+          "rootString": 1
+        },
+        {
+          "type": "m6",
+          "frets": [
+            -1,
+            -1,
+            0,
+            2,
+            0,
+            1
+          ],
+          "baseFret": 1,
+          "root": "D",
+          "rootString": 2
+        },
+        {
+          "type": "sus4",
+          "frets": [
+            -1,
+            -1,
+            0,
+            2,
+            3,
+            3
+          ],
+          "baseFret": 1,
+          "root": "D",
+          "rootString": 2
+        },
+        {
+          "type": "sus4",
+          "frets": [
+            -1,
+            0,
+            2,
+            2,
+            3,
+            0
+          ],
+          "baseFret": 1,
+          "root": "A",
+          "rootString": 1
+        },
+        {
+          "type": "7sus4",
+          "frets": [
+            -1,
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          "baseFret": 1,
+          "root": "A",
+          "rootString": 1
+        },
+        {
+          "type": "",
+          "frets": [
+            1,
+            3,
+            3,
+            2,
+            1,
+            1
+          ],
+          "baseFret": 1,
+          "rootString": 0,
+          "barre": {
+            "fret": 1,
+            "fromString": 0,
+            "toString": 5
+          }
+        },
+        {
+          "type": "",
+          "frets": [
+            -1,
+            1,
+            3,
+            3,
+            3,
+            1
+          ],
+          "baseFret": 1,
+          "rootString": 1,
+          "barre": {
+            "fret": 1,
+            "fromString": 1,
+            "toString": 5
+          }
+        },
+        {
+          "type": "m",
+          "frets": [
+            1,
+            3,
+            3,
+            1,
+            1,
+            1
+          ],
+          "baseFret": 1,
+          "rootString": 0,
+          "barre": {
+            "fret": 1,
+            "fromString": 0,
+            "toString": 5
+          }
+        },
+        {
+          "type": "m",
+          "frets": [
+            -1,
+            1,
+            3,
+            3,
+            2,
+            1
+          ],
+          "baseFret": 1,
+          "rootString": 1,
+          "barre": {
+            "fret": 1,
+            "fromString": 1,
+            "toString": 5
+          }
+        },
+        {
+          "type": "7",
+          "frets": [
+            1,
+            3,
+            1,
+            2,
+            1,
+            1
+          ],
+          "baseFret": 1,
+          "rootString": 0,
+          "barre": {
+            "fret": 1,
+            "fromString": 0,
+            "toString": 5
+          }
+        },
+        {
+          "type": "7",
+          "frets": [
+            -1,
+            1,
+            3,
+            1,
+            3,
+            1
+          ],
+          "baseFret": 1,
+          "rootString": 1,
+          "barre": {
+            "fret": 1,
+            "fromString": 1,
+            "toString": 5
+          }
+        },
+        {
+          "type": "maj7",
+          "frets": [
+            1,
+            -1,
+            2,
+            2,
+            1,
+            -1
+          ],
+          "baseFret": 1,
+          "rootString": 0
+        },
+        {
+          "type": "maj7",
+          "frets": [
+            -1,
+            1,
+            3,
+            2,
+            3,
+            -1
+          ],
+          "baseFret": 1,
+          "rootString": 1
+        },
+        {
+          "type": "m7",
+          "frets": [
+            1,
+            3,
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseFret": 1,
+          "rootString": 0,
+          "barre": {
+            "fret": 1,
+            "fromString": 0,
+            "toString": 5
+          }
+        },
+        {
+          "type": "m7",
+          "frets": [
+            -1,
+            1,
+            3,
+            1,
+            2,
+            1
+          ],
+          "baseFret": 1,
+          "rootString": 1,
+          "barre": {
+            "fret": 1,
+            "fromString": 1,
+            "toString": 5
+          }
+        },
+        {
+          "type": "m7b5",
+          "frets": [
+            -1,
+            1,
+            2,
+            1,
+            2,
+            -1
+          ],
+          "baseFret": 1,
+          "rootString": 1
+        },
+        {
+          "type": "o7",
+          "frets": [
+            -1,
+            2,
+            3,
+            1,
+            3,
+            -1
+          ],
+          "baseFret": 1,
+          "rootString": 1
+        },
+        {
+          "type": "6",
+          "frets": [
+            1,
+            3,
+            3,
+            2,
+            3,
+            1
+          ],
+          "baseFret": 1,
+          "rootString": 0,
+          "barre": {
+            "fret": 1,
+            "fromString": 0,
+            "toString": 5
+          }
+        },
+        {
+          "type": "m6",
+          "frets": [
+            -1,
+            2,
+            4,
+            1,
+            3,
+            -1
+          ],
+          "baseFret": 1,
+          "rootString": 1
+        },
+        {
+          "type": "sus4",
+          "frets": [
+            1,
+            3,
+            3,
+            3,
+            1,
+            1
+          ],
+          "baseFret": 1,
+          "rootString": 0,
+          "barre": {
+            "fret": 1,
+            "fromString": 0,
+            "toString": 5
+          }
+        },
+        {
+          "type": "7sus4",
+          "frets": [
+            1,
+            3,
+            1,
+            3,
+            1,
+            1
+          ],
+          "baseFret": 1,
+          "rootString": 0,
+          "barre": {
+            "fret": 1,
+            "fromString": 0,
+            "toString": 5
+          }
+        },
+        {
+          "type": "+",
+          "frets": [
+            -1,
+            3,
+            2,
+            1,
+            1,
+            -1
+          ],
+          "baseFret": 1,
+          "rootString": 1,
+          "barre": {
+            "fret": 1,
+            "fromString": 3,
+            "toString": 4
+          }
+        },
+        {
+          "type": "9",
+          "frets": [
+            -1,
+            2,
+            1,
+            2,
+            2,
+            -1
+          ],
+          "baseFret": 1,
+          "rootString": 1
+        },
+        {
+          "type": "m9",
+          "frets": [
+            -1,
+            3,
+            1,
+            3,
+            3,
+            -1
+          ],
+          "baseFret": 1,
+          "rootString": 1
+        },
+        {
+          "type": "maj9",
+          "frets": [
+            -1,
+            2,
+            1,
+            3,
+            2,
+            -1
+          ],
+          "baseFret": 1,
+          "rootString": 1
+        }
+      ]
+    },
+    {
+      "id": "ukulele",
+      "displayName": "Ukulele",
+      "tuning": [
+        67,
+        60,
+        64,
+        69
+      ],
+      "shapes": [
+        {
+          "type": "",
+          "frets": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "baseFret": 1,
+          "root": "C",
+          "rootString": 1
+        },
+        {
+          "type": "",
+          "frets": [
+            2,
+            2,
+            2,
+            0
+          ],
+          "baseFret": 1,
+          "root": "D",
+          "rootString": 1
+        },
+        {
+          "type": "",
+          "frets": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "baseFret": 1,
+          "root": "F",
+          "rootString": 1
+        },
+        {
+          "type": "",
+          "frets": [
+            0,
+            2,
+            3,
+            2
+          ],
+          "baseFret": 1,
+          "root": "G",
+          "rootString": 0
+        },
+        {
+          "type": "",
+          "frets": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "baseFret": 1,
+          "root": "A",
+          "rootString": 3
+        },
+        {
+          "type": "m",
+          "frets": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "baseFret": 1,
+          "root": "A",
+          "rootString": 3
+        },
+        {
+          "type": "m",
+          "frets": [
+            2,
+            2,
+            1,
+            0
+          ],
+          "baseFret": 1,
+          "root": "D",
+          "rootString": 1
+        },
+        {
+          "type": "m",
+          "frets": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "baseFret": 1,
+          "root": "G",
+          "rootString": 0
+        },
+        {
+          "type": "m",
+          "frets": [
+            0,
+            3,
+            3,
+            3
+          ],
+          "baseFret": 1,
+          "root": "C",
+          "rootString": 1
+        },
+        {
+          "type": "7",
+          "frets": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "baseFret": 1,
+          "root": "C",
+          "rootString": 1
+        },
+        {
+          "type": "7",
+          "frets": [
+            2,
+            2,
+            2,
+            3
+          ],
+          "baseFret": 1,
+          "root": "D",
+          "rootString": 1
+        },
+        {
+          "type": "7",
+          "frets": [
+            0,
+            2,
+            1,
+            2
+          ],
+          "baseFret": 1,
+          "root": "G",
+          "rootString": 0
+        },
+        {
+          "type": "7",
+          "frets": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "baseFret": 1,
+          "root": "A",
+          "rootString": 3
+        },
+        {
+          "type": "maj7",
+          "frets": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "baseFret": 1,
+          "root": "C",
+          "rootString": 1
+        },
+        {
+          "type": "maj7",
+          "frets": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "baseFret": 1,
+          "root": "F",
+          "rootString": 1
+        },
+        {
+          "type": "m7",
+          "frets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "baseFret": 1,
+          "root": "A",
+          "rootString": 3
+        },
+        {
+          "type": "m7",
+          "frets": [
+            2,
+            2,
+            1,
+            3
+          ],
+          "baseFret": 1,
+          "root": "D",
+          "rootString": 1
+        },
+        {
+          "type": "m7",
+          "frets": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "baseFret": 1,
+          "root": "C",
+          "rootString": 1
+        },
+        {
+          "type": "",
+          "frets": [
+            3,
+            2,
+            1,
+            1
+          ],
+          "baseFret": 1,
+          "rootString": 0,
+          "barre": {
+            "fret": 1,
+            "fromString": 2,
+            "toString": 3
+          }
+        },
+        {
+          "type": "m",
+          "frets": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "baseFret": 1,
+          "rootString": 0,
+          "barre": {
+            "fret": 1,
+            "fromString": 1,
+            "toString": 3
+          }
+        },
+        {
+          "type": "7",
+          "frets": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "baseFret": 1,
+          "rootString": 1,
+          "barre": {
+            "fret": 1,
+            "fromString": 0,
+            "toString": 2
+          }
+        },
+        {
+          "type": "maj7",
+          "frets": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "baseFret": 1,
+          "rootString": 1,
+          "barre": {
+            "fret": 1,
+            "fromString": 0,
+            "toString": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "bass",
+      "displayName": "Bass",
+      "tuning": [
+        28,
+        33,
+        38,
+        43
+      ],
+      "shapes": [
+        {
+          "type": "",
+          "frets": [
+            0,
+            2,
+            2,
+            -1
+          ],
+          "baseFret": 1,
+          "root": "E",
+          "rootString": 0
+        },
+        {
+          "type": "",
+          "frets": [
+            -1,
+            0,
+            2,
+            2
+          ],
+          "baseFret": 1,
+          "root": "A",
+          "rootString": 1
+        },
+        {
+          "type": "",
+          "frets": [
+            -1,
+            -1,
+            0,
+            2
+          ],
+          "baseFret": 1,
+          "root": "D",
+          "rootString": 2
+        },
+        {
+          "type": "",
+          "frets": [
+            3,
+            5,
+            5,
+            -1
+          ],
+          "baseFret": 1,
+          "root": "G",
+          "rootString": 0
+        },
+        {
+          "type": "",
+          "frets": [
+            1,
+            3,
+            3,
+            -1
+          ],
+          "baseFret": 1,
+          "rootString": 0
+        },
+        {
+          "type": "m",
+          "frets": [
+            1,
+            3,
+            3,
+            -1
+          ],
+          "baseFret": 1,
+          "rootString": 0
+        },
+        {
+          "type": "7",
+          "frets": [
+            1,
+            3,
+            1,
+            -1
+          ],
+          "baseFret": 1,
+          "rootString": 0
+        },
+        {
+          "type": "m7",
+          "frets": [
+            1,
+            3,
+            1,
+            -1
+          ],
+          "baseFret": 1,
+          "rootString": 0
+        },
+        {
+          "type": "maj7",
+          "frets": [
+            1,
+            3,
+            2,
+            -1
+          ],
+          "baseFret": 1,
+          "rootString": 0
+        }
+      ]
+    }
+  ]
+}

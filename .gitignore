@@ -1,0 +1,36 @@
+# Build output
+app/build/
+# Any Dart package's tool cache, not just the app's: `tools/` holds packages
+# too, and one of them was tracking a 4 MB test snapshot. A pattern with no
+# interior slash matches at every level, so this covers all of them.
+.dart_tool/
+app/.flutter-plugins-dependencies
+app/linux/flutter/ephemeral/
+app/windows/flutter/ephemeral/
+app/macos/Flutter/ephemeral/
+app/ios/Flutter/ephemeral/
+app/android/.gradle/
+app/android/local.properties
+rust/target/
+target/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+.DS_Store
+
+# Dart / Flutter misc
+**/doc/api/
+app/coverage/
+app.*.symbols
+app.*.map.json
+.widget_preview/
+
+# Local library / user data (never committed)
+renders/
+
+# Build output that is not source: the FluidSynth A/B renders
+# (rust/tests/fluidsynth_ab_test.rs) and the bass auditions (`just audition`).
+/build/

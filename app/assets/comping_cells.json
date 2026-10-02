@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 1,
+  "cells": [
+    {
+      "id": "whole",
+      "meter": "4/4",
+      "bars": 1,
+      "onsets": [
+        {
+          "beat": 0,
+          "duration": 3.8,
+          "accent": 0.5
+        }
+      ],
+      "minimumIntensity": 0,
+      "maximumIntensity": 40,
+      "tags": [
+        "sparse",
+        "on-the-beat"
+      ]
+    },
+    {
+      "id": "two-and-four",
+      "meter": "4/4",
+      "bars": 1,
+      "onsets": [
+        {
+          "beat": 1,
+          "duration": 0.9,
+          "accent": 0.6
+        },
+        {
+          "beat": 3,
+          "duration": 0.9,
+          "accent": 0.6
+        }
+      ],
+      "minimumIntensity": 0,
+      "maximumIntensity": 55,
+      "tags": [
+        "sparse"
+      ]
+    },
+    {
+      "id": "and-of-two",
+      "meter": "4/4",
+      "bars": 1,
+      "onsets": [
+        {
+          "beat": 1.5,
+          "duration": 2.4,
+          "accent": 0.7
+        }
+      ],
+      "minimumIntensity": 0,
+      "maximumIntensity": 45,
+      "tags": [
+        "sparse",
+        "pushed"
+      ]
+    },
+    {
+      "id": "half-note",
+      "meter": "4/4",
+      "bars": 1,
+      "onsets": [
+        {
+          "beat": 0,
+          "duration": 1.9,
+          "accent": 0.6
+        },
+        {
+          "beat": 2,
+          "duration": 1.9,
+          "accent": 0.5
+        }
+      ],
+      "minimumIntensity": 0,
+      "maximumIntensity": 50,
+      "tags": [
+        "sparse",
+        "on-the-beat"
+      ]
+    },
+    {
+      "id": "charleston",
+      "meter": "4/4",
+      "bars": 1,
+      "onsets": [
+        {
+          "beat": 0,
+          "duration": 1.4,
+          "accent": 0.8
+        },
+        {
+          "beat": 1.5,
+          "duration": 2.4,
+          "accent": 0.6
+        }
+      ],
+      "minimumIntensity": 25,
+      "maximumIntensity": 85,
+      "tags": [
+        "charleston"
+      ]
+    },
+    {
+      "id": "charleston-reversed",
+      "meter": "4/4",
+      "bars": 1,
+      "onsets": [
+        {
+          "beat": 1.5,
+          "duration": 1.4,
+          "accent": 0.7
+        },
+        {
+          "beat": 3,
+          "duration": 0.9,
+          "accent": 0.6
+        }
+      ],
+      "minimumIntensity": 25,
+      "maximumIntensity": 85,
+      "tags": [
+        "charleston",
+        "pushed"
+      ]
+    },
+    {
+      "id": "charleston-two-bar",
+      "meter": "4/4",
+      "bars": 2,
+      "onsets": [
+        {
+          "beat": 0,
+          "duration": 1.4,
+          "accent": 0.8
+        },
+        {
+          "beat": 1.5,
+          "duration": 2.4,
+          "accent": 0.6
+        },
+        {
+          "beat": 5.5,
+          "duration": 2.4,
+          "accent": 0.7
+        }
+      ],
+      "minimumIntensity": 30,
+      "maximumIntensity": 90,
+      "tags": [
+        "charleston",
+        "pushed"
+      ]
+    },
+    {
+      "id": "push-three",
+      "meter": "4/4",
+      "bars": 1,
+      "onsets": [
+        {
+          "beat": 0,
+          "duration": 1.9,
+          "accent": 0.7
+        },
+        {
+          "beat": 2.5,
+          "duration": 1.4,
+          "accent": 0.7
+        }
+      ],
+      "minimumIntensity": 30,
+      "maximumIntensity": 90,
+      "tags": [
+        "pushed"
+      ]
+    },
+    {
+      "id": "push-one",
+      "meter": "4/4",
+      "bars": 1,
+      "onsets": [
+        {
+          "beat": 1,
+          "duration": 1.4,
+          "accent": 0.5
+        },
+        {
+          "beat": 3.5,
+          "duration": 0.9,
+          "accent": 0.8
+        }
+      ],
+      "minimumIntensity": 35,
+      "maximumIntensity": 95,
+      "tags": [
+        "pushed"
+      ]
+    },
+    {
+      "id": "double-push",
+      "meter": "4/4",
+      "bars": 1,
+      "onsets": [
+        {
+          "beat": 1.5,
+          "duration": 0.9,
+          "accent": 0.7
+        },
+        {
+          "beat": 3.5,
+          "duration": 0.9,
+          "accent": 0.7
+        }
+      ],
+      "minimumIntensity": 40,
+      "maximumIntensity": 100,
+      "tags": [
+        "pushed",
+        "sparse"
+      ]
+    },
+    {
+      "id": "syncopated-four",
+      "meter": "4/4",
+      "bars": 1,
+      "onsets": [
+        {
+          "beat": 0,
+          "duration": 0.9,
+          "accent": 0.8
+        },
+        {
+          "beat": 1.5,
+          "duration": 0.9,
+          "accent": 0.6
+        },
+        {
+          "beat": 2.5,
+          "duration": 0.4,
+          "accent": 0.6
+        },
+        {
+          "beat": 3.5,
+          "duration": 0.9,
+          "accent": 0.7
+        }
+      ],
+      "minimumIntensity": 55,
+      "maximumIntensity": 100,
+      "tags": [
+        "busy",
+        "pushed"
+      ]
+    },
+    {
+      "id": "off-beat-eighths",
+      "meter": "4/4",
+      "bars": 1,
+      "onsets": [
+        {
+          "beat": 0.5,
+          "duration": 0.4,
+          "accent": 0.6
+        },
+        {
+          "beat": 1.5,
+          "duration": 0.4,
+          "accent": 0.7
+        },
+        {
+          "beat": 2.5,
+          "duration": 0.4,
+          "accent": 0.6
+        },
+        {
+          "beat": 3.5,
+          "duration": 0.9,
+          "accent": 0.7
+        }
+      ],
+      "minimumIntensity": 60,
+      "maximumIntensity": 100,
+      "tags": [
+        "busy",
+        "pushed"
+      ]
+    },
+    {
+      "id": "anticipate-and-hold",
+      "meter": "4/4",
+      "bars": 2,
+      "onsets": [
+        {
+          "beat": 0,
+          "duration": 0.9,
+          "accent": 0.7
+        },
+        {
+          "beat": 1.5,
+          "duration": 1.4,
+          "accent": 0.6
+        },
+        {
+          "beat": 3.5,
+          "duration": 2.4,
+          "accent": 0.8
+        }
+      ],
+      "minimumIntensity": 45,
+      "maximumIntensity": 95,
+      "tags": [
+        "pushed"
+      ]
+    },
+    {
+      "id": "question-answer",
+      "meter": "4/4",
+      "bars": 2,
+      "onsets": [
+        {
+          "beat": 0,
+          "duration": 1.4,
+          "accent": 0.8
+        },
+        {
+          "beat": 1.5,
+          "duration": 1.9,
+          "accent": 0.6
+        },
+        {
+          "beat": 5.5,
+          "duration": 0.9,
+          "accent": 0.7
+        },
+        {
+          "beat": 7,
+          "duration": 0.9,
+          "accent": 0.6
+        }
+      ],
+      "minimumIntensity": 35,
+      "maximumIntensity": 90,
+      "tags": [
+        "charleston"
+      ]
+    },
+    {
+      "id": "hold-then-move",
+      "meter": "4/4",
+      "bars": 2,
+      "onsets": [
+        {
+          "beat": 0,
+          "duration": 3.4,
+          "accent": 0.7
+        },
+        {
+          "beat": 4.5,
+          "duration": 0.9,
+          "accent": 0.6
+        },
+        {
+          "beat": 6,
+          "duration": 0.9,
+          "accent": 0.6
+        },
+        {
+          "beat": 7.5,
+          "duration": 0.4,
+          "accent": 0.7
+        }
+      ],
+      "minimumIntensity": 40,
+      "maximumIntensity": 95,
+      "tags": [
+        "busy"
+      ]
+    },
+    {
+      "id": "space-then-push",
+      "meter": "4/4",
+      "bars": 2,
+      "onsets": [
+        {
+          "beat": 1.5,
+          "duration": 2.4,
+          "accent": 0.6
+        },
+        {
+          "beat": 5.5,
+          "duration": 2.4,
+          "accent": 0.7
+        }
+      ],
+      "minimumIntensity": 20,
+      "maximumIntensity": 70,
+      "tags": [
+        "sparse",
+        "pushed"
+      ]
+    },
+    {
+      "id": "pedal-whole",
+      "meter": "4/4",
+      "bars": 2,
+      "onsets": [
+        {
+          "beat": 0,
+          "duration": 7.6,
+          "accent": 0.5
+        }
+      ],
+      "minimumIntensity": 0,
+      "maximumIntensity": 35,
+      "tags": [
+        "pedal",
+        "sparse"
+      ]
+    },
+    {
+      "id": "waltz-one",
+      "meter": "3/4",
+      "bars": 1,
+      "onsets": [
+        {
+          "beat": 0,
+          "duration": 0.9,
+          "accent": 0.8
+        },
+        {
+          "beat": 2,
+          "duration": 0.9,
+          "accent": 0.5
+        }
+      ],
+      "minimumIntensity": 0,
+      "maximumIntensity": 70,
+      "tags": [
+        "sparse"
+      ]
+    },
+    {
+      "id": "waltz-push",
+      "meter": "3/4",
+      "bars": 1,
+      "onsets": [
+        {
+          "beat": 0,
+          "duration": 1.4,
+          "accent": 0.7
+        },
+        {
+          "beat": 1.5,
+          "duration": 1.4,
+          "accent": 0.6
+        }
+      ],
+      "minimumIntensity": 30,
+      "maximumIntensity": 100,
+      "tags": [
+        "pushed"
+      ]
+    },
+    {
+      "id": "waltz-two-bar",
+      "meter": "3/4",
+      "bars": 2,
+      "onsets": [
+        {
+          "beat": 0,
+          "duration": 1.9,
+          "accent": 0.7
+        },
+        {
+          "beat": 2.5,
+          "duration": 0.4,
+          "accent": 0.6
+        },
+        {
+          "beat": 4,
+          "duration": 1.9,
+          "accent": 0.6
+        }
+      ],
+      "minimumIntensity": 35,
+      "maximumIntensity": 100,
+      "tags": [
+        "charleston"
+      ]
+    }
+  ]
+}

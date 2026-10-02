@@ -1,0 +1,15 @@
+name: tiling_probe
+description: >-
+  M0.5 probe: does corpus tiling produce a musical walking bass line?
+  Deliberately self-contained and throwaway — it shares no code with the
+  Bandstand domain model, so that a bad result cannot be blamed on a
+  half-built abstraction. See docs/rules/corpus-tiling.md.
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ^3.13.0
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.0

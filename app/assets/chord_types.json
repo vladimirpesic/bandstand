@@ -1,0 +1,905 @@
+{
+  "schemaVersion": 1,
+  "documentation": "docs/format/chord-types.md",
+  "note": "The FIRST alias of each entry is its canonical symbol: it is what format() writes, and it is what parse(format(x)) == x depends on. Order within the alias list is therefore significant; order of the entries themselves is not.",
+  "cores": [
+    {
+      "name": "",
+      "aliases": [
+        "",
+        "M",
+        "maj",
+        "ma"
+      ],
+      "family": "major",
+      "degrees": [
+        "1",
+        "3",
+        "5"
+      ]
+    },
+    {
+      "name": "m",
+      "aliases": [
+        "m",
+        "min",
+        "mi",
+        "-"
+      ],
+      "family": "minor",
+      "degrees": [
+        "1",
+        "b3",
+        "5"
+      ]
+    },
+    {
+      "name": "+",
+      "aliases": [
+        "+",
+        "aug"
+      ],
+      "family": "augmented",
+      "degrees": [
+        "1",
+        "3",
+        "#5"
+      ]
+    },
+    {
+      "name": "o",
+      "aliases": [
+        "o",
+        "dim",
+        "°"
+      ],
+      "family": "diminished",
+      "degrees": [
+        "1",
+        "b3",
+        "b5"
+      ]
+    },
+    {
+      "name": "sus4",
+      "aliases": [
+        "sus4",
+        "sus"
+      ],
+      "family": "sus",
+      "degrees": [
+        "1",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "name": "sus2",
+      "aliases": [
+        "sus2"
+      ],
+      "family": "sus",
+      "degrees": [
+        "1",
+        "2",
+        "5"
+      ]
+    },
+    {
+      "name": "5",
+      "aliases": [
+        "5"
+      ],
+      "family": "other",
+      "degrees": [
+        "1",
+        "5"
+      ]
+    },
+    {
+      "name": "6",
+      "aliases": [
+        "6",
+        "maj6",
+        "M6",
+        "ma6"
+      ],
+      "family": "major",
+      "degrees": [
+        "1",
+        "3",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "name": "m6",
+      "aliases": [
+        "m6",
+        "min6",
+        "mi6",
+        "-6"
+      ],
+      "family": "minor",
+      "degrees": [
+        "1",
+        "b3",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "name": "69",
+      "aliases": [
+        "69",
+        "6/9",
+        "6add9",
+        "M69"
+      ],
+      "family": "major",
+      "degrees": [
+        "1",
+        "3",
+        "5",
+        "6",
+        "9"
+      ]
+    },
+    {
+      "name": "m69",
+      "aliases": [
+        "m69",
+        "m6/9",
+        "min69",
+        "-6/9"
+      ],
+      "family": "minor",
+      "degrees": [
+        "1",
+        "b3",
+        "5",
+        "6",
+        "9"
+      ]
+    },
+    {
+      "name": "6sus4",
+      "aliases": [
+        "6sus4",
+        "6sus"
+      ],
+      "family": "sus",
+      "degrees": [
+        "1",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "name": "7",
+      "aliases": [
+        "7",
+        "dom7",
+        "dom"
+      ],
+      "family": "dominant",
+      "degrees": [
+        "1",
+        "3",
+        "5",
+        "b7"
+      ]
+    },
+    {
+      "name": "maj7",
+      "aliases": [
+        "maj7",
+        "Maj7",
+        "M7",
+        "ma7",
+        "MA7",
+        "Δ7",
+        "Δ",
+        "^7",
+        "^",
+        "j7"
+      ],
+      "family": "major",
+      "degrees": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ]
+    },
+    {
+      "name": "m7",
+      "aliases": [
+        "m7",
+        "min7",
+        "mi7",
+        "-7"
+      ],
+      "family": "minor",
+      "degrees": [
+        "1",
+        "b3",
+        "5",
+        "b7"
+      ]
+    },
+    {
+      "name": "mMaj7",
+      "aliases": [
+        "mMaj7",
+        "mM7",
+        "minMaj7",
+        "minmaj7",
+        "-Δ7",
+        "mΔ7",
+        "-maj7"
+      ],
+      "family": "minor",
+      "degrees": [
+        "1",
+        "b3",
+        "5",
+        "7"
+      ]
+    },
+    {
+      "name": "m7b5",
+      "aliases": [
+        "m7b5",
+        "ø7",
+        "ø",
+        "h7",
+        "h",
+        "min7b5",
+        "mi7b5",
+        "-7b5",
+        "m7-5",
+        "halfdim"
+      ],
+      "family": "diminished",
+      "degrees": [
+        "1",
+        "b3",
+        "b5",
+        "b7"
+      ]
+    },
+    {
+      "name": "o7",
+      "aliases": [
+        "o7",
+        "dim7",
+        "°7"
+      ],
+      "family": "diminished",
+      "degrees": [
+        "1",
+        "b3",
+        "b5",
+        "bb7"
+      ]
+    },
+    {
+      "name": "7sus4",
+      "aliases": [
+        "7sus4",
+        "7sus"
+      ],
+      "family": "sus",
+      "degrees": [
+        "1",
+        "4",
+        "5",
+        "b7"
+      ]
+    },
+    {
+      "name": "7b5",
+      "aliases": [
+        "7b5",
+        "7-5"
+      ],
+      "family": "dominant",
+      "degrees": [
+        "1",
+        "3",
+        "b5",
+        "b7"
+      ]
+    },
+    {
+      "name": "7#5",
+      "aliases": [
+        "7#5",
+        "+7",
+        "aug7",
+        "7+5",
+        "7+"
+      ],
+      "family": "dominant",
+      "degrees": [
+        "1",
+        "3",
+        "#5",
+        "b7"
+      ]
+    },
+    {
+      "name": "maj7b5",
+      "aliases": [
+        "maj7b5",
+        "M7b5",
+        "Δ7b5"
+      ],
+      "family": "major",
+      "degrees": [
+        "1",
+        "3",
+        "b5",
+        "7"
+      ]
+    },
+    {
+      "name": "maj7#5",
+      "aliases": [
+        "maj7#5",
+        "M7#5",
+        "Δ7#5",
+        "+maj7",
+        "maj7+5",
+        "+Δ7"
+      ],
+      "family": "major",
+      "degrees": [
+        "1",
+        "3",
+        "#5",
+        "7"
+      ]
+    },
+    {
+      "name": "7alt",
+      "aliases": [
+        "7alt",
+        "alt",
+        "7altered"
+      ],
+      "family": "dominant",
+      "degrees": [
+        "1",
+        "3",
+        "b7",
+        "b9",
+        "#9",
+        "#11",
+        "b13"
+      ]
+    },
+    {
+      "name": "9",
+      "aliases": [
+        "9",
+        "dom9"
+      ],
+      "family": "dominant",
+      "degrees": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9"
+      ]
+    },
+    {
+      "name": "maj9",
+      "aliases": [
+        "maj9",
+        "M9",
+        "Δ9",
+        "^9",
+        "ma9"
+      ],
+      "family": "major",
+      "degrees": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ]
+    },
+    {
+      "name": "m9",
+      "aliases": [
+        "m9",
+        "min9",
+        "mi9",
+        "-9"
+      ],
+      "family": "minor",
+      "degrees": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9"
+      ]
+    },
+    {
+      "name": "mMaj9",
+      "aliases": [
+        "mMaj9",
+        "mM9",
+        "minMaj9",
+        "-Δ9"
+      ],
+      "family": "minor",
+      "degrees": [
+        "1",
+        "b3",
+        "5",
+        "7",
+        "9"
+      ]
+    },
+    {
+      "name": "m9b5",
+      "aliases": [
+        "m9b5",
+        "ø9",
+        "min9b5",
+        "-9b5"
+      ],
+      "family": "diminished",
+      "degrees": [
+        "1",
+        "b3",
+        "b5",
+        "b7",
+        "9"
+      ]
+    },
+    {
+      "name": "9sus4",
+      "aliases": [
+        "9sus4",
+        "9sus"
+      ],
+      "family": "sus",
+      "degrees": [
+        "1",
+        "4",
+        "5",
+        "b7",
+        "9"
+      ]
+    },
+    {
+      "name": "9b5",
+      "aliases": [
+        "9b5",
+        "9-5"
+      ],
+      "family": "dominant",
+      "degrees": [
+        "1",
+        "3",
+        "b5",
+        "b7",
+        "9"
+      ]
+    },
+    {
+      "name": "9#5",
+      "aliases": [
+        "9#5",
+        "9+5"
+      ],
+      "family": "dominant",
+      "degrees": [
+        "1",
+        "3",
+        "#5",
+        "b7",
+        "9"
+      ]
+    },
+    {
+      "name": "add9",
+      "aliases": [
+        "add9",
+        "add2",
+        "Madd9"
+      ],
+      "family": "major",
+      "degrees": [
+        "1",
+        "3",
+        "5",
+        "9"
+      ]
+    },
+    {
+      "name": "madd9",
+      "aliases": [
+        "madd9",
+        "minadd9",
+        "-add9"
+      ],
+      "family": "minor",
+      "degrees": [
+        "1",
+        "b3",
+        "5",
+        "9"
+      ]
+    },
+    {
+      "name": "11",
+      "aliases": [
+        "11",
+        "dom11"
+      ],
+      "family": "dominant",
+      "degrees": [
+        "1",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ]
+    },
+    {
+      "name": "maj11",
+      "aliases": [
+        "maj11",
+        "M11",
+        "Δ11",
+        "^11"
+      ],
+      "family": "major",
+      "degrees": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "11"
+      ]
+    },
+    {
+      "name": "m11",
+      "aliases": [
+        "m11",
+        "min11",
+        "mi11",
+        "-11"
+      ],
+      "family": "minor",
+      "degrees": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9",
+        "11"
+      ]
+    },
+    {
+      "name": "m11b5",
+      "aliases": [
+        "m11b5",
+        "ø11"
+      ],
+      "family": "diminished",
+      "degrees": [
+        "1",
+        "b3",
+        "b5",
+        "b7",
+        "9",
+        "11"
+      ]
+    },
+    {
+      "name": "13",
+      "aliases": [
+        "13",
+        "dom13"
+      ],
+      "family": "dominant",
+      "degrees": [
+        "1",
+        "3",
+        "5",
+        "b7",
+        "9",
+        "13"
+      ]
+    },
+    {
+      "name": "maj13",
+      "aliases": [
+        "maj13",
+        "M13",
+        "Δ13",
+        "^13"
+      ],
+      "family": "major",
+      "degrees": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "13"
+      ]
+    },
+    {
+      "name": "m13",
+      "aliases": [
+        "m13",
+        "min13",
+        "mi13",
+        "-13"
+      ],
+      "family": "minor",
+      "degrees": [
+        "1",
+        "b3",
+        "5",
+        "b7",
+        "9",
+        "13"
+      ]
+    },
+    {
+      "name": "13sus4",
+      "aliases": [
+        "13sus4",
+        "13sus"
+      ],
+      "family": "sus",
+      "degrees": [
+        "1",
+        "4",
+        "5",
+        "b7",
+        "9",
+        "13"
+      ]
+    }
+  ],
+  "modifiers": [
+    {
+      "symbol": "b5",
+      "aliases": [
+        "b5",
+        "-5"
+      ],
+      "set": [
+        "b5"
+      ],
+      "order": 10
+    },
+    {
+      "symbol": "#5",
+      "aliases": [
+        "#5",
+        "+5"
+      ],
+      "set": [
+        "#5"
+      ],
+      "order": 10
+    },
+    {
+      "symbol": "maj7",
+      "aliases": [
+        "maj7",
+        "Maj7",
+        "M7",
+        "ma7",
+        "Δ7",
+        "Δ",
+        "^7"
+      ],
+      "set": [
+        "7"
+      ],
+      "order": 15
+    },
+    {
+      "symbol": "b9",
+      "aliases": [
+        "b9",
+        "-9"
+      ],
+      "set": [
+        "b9"
+      ],
+      "order": 20
+    },
+    {
+      "symbol": "#9",
+      "aliases": [
+        "#9",
+        "+9"
+      ],
+      "set": [
+        "#9"
+      ],
+      "order": 20
+    },
+    {
+      "symbol": "9",
+      "aliases": [
+        "9"
+      ],
+      "set": [
+        "9"
+      ],
+      "order": 20
+    },
+    {
+      "symbol": "#11",
+      "aliases": [
+        "#11",
+        "+11"
+      ],
+      "set": [
+        "#11"
+      ],
+      "order": 30
+    },
+    {
+      "symbol": "11",
+      "aliases": [
+        "11"
+      ],
+      "set": [
+        "11"
+      ],
+      "order": 30
+    },
+    {
+      "symbol": "b13",
+      "aliases": [
+        "b13",
+        "-13"
+      ],
+      "set": [
+        "b13"
+      ],
+      "order": 40
+    },
+    {
+      "symbol": "13",
+      "aliases": [
+        "13"
+      ],
+      "set": [
+        "13"
+      ],
+      "order": 40
+    },
+    {
+      "symbol": "6",
+      "aliases": [
+        "6"
+      ],
+      "set": [
+        "6"
+      ],
+      "order": 45
+    },
+    {
+      "symbol": "add9",
+      "aliases": [
+        "add9",
+        "add2"
+      ],
+      "set": [
+        "9"
+      ],
+      "order": 50
+    },
+    {
+      "symbol": "add11",
+      "aliases": [
+        "add11",
+        "add4"
+      ],
+      "set": [
+        "11"
+      ],
+      "order": 50
+    },
+    {
+      "symbol": "add13",
+      "aliases": [
+        "add13",
+        "add6"
+      ],
+      "set": [
+        "13"
+      ],
+      "order": 50
+    },
+    {
+      "symbol": "sus4",
+      "aliases": [
+        "sus4",
+        "sus"
+      ],
+      "remove": [
+        3
+      ],
+      "set": [
+        "4"
+      ],
+      "order": 60,
+      "family": "sus"
+    },
+    {
+      "symbol": "sus2",
+      "aliases": [
+        "sus2"
+      ],
+      "remove": [
+        3
+      ],
+      "set": [
+        "2"
+      ],
+      "order": 60,
+      "family": "sus"
+    },
+    {
+      "symbol": "no3",
+      "aliases": [
+        "no3",
+        "omit3"
+      ],
+      "remove": [
+        3
+      ],
+      "order": 70
+    },
+    {
+      "symbol": "no5",
+      "aliases": [
+        "no5",
+        "omit5"
+      ],
+      "remove": [
+        5
+      ],
+      "order": 70
+    },
+    {
+      "symbol": "alt",
+      "aliases": [
+        "alt",
+        "altered"
+      ],
+      "degrees": [
+        "1",
+        "3",
+        "b7",
+        "b9",
+        "#9",
+        "#11",
+        "b13"
+      ],
+      "order": 80,
+      "family": "dominant"
+    }
+  ]
+}

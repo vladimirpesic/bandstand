@@ -1,0 +1,37 @@
+name: Website
+
+# Publishes website/ to GitHub Pages. The site is static HTML/CSS with no
+# build step, so building it is just uploading the folder. The soundbank
+# deliberately does not ship with the site: a 148 MB binary belongs on
+# release assets, not Pages. One-time setup, repo owner: Settings -> Pages
+# -> Build and deployment -> Source: GitHub Actions. After that, every push
+# to main that touches website/ republishes the site, and Run workflow
+# publishes on demand.
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'website/**'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: website
+      - uses: actions/deploy-pages@v4

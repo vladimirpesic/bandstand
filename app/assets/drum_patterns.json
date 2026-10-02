@@ -1,0 +1,709 @@
+{
+  "schemaVersion": 1,
+  "documentation": "docs/format/drum-patterns.md",
+  "note": "Beats are where the hit is played, so a swung offbeat sits at 1.66 rather than 1.5 \u2014 the feel lives in the data, where it can be heard and edited. See docs/rules/drum-generation.md \u00a75.",
+  "instruments": {
+    "kick": 36,
+    "sideStick": 37,
+    "snare": 38,
+    "handClap": 39,
+    "snareRim": 40,
+    "tomFloorLow": 41,
+    "hiHatClosed": 42,
+    "tomFloorHigh": 43,
+    "hiHatPedal": 44,
+    "tomLow": 45,
+    "hiHatOpen": 46,
+    "tomMid": 47,
+    "tomHigh": 50,
+    "crash": 49,
+    "ride": 51,
+    "rideBell": 53,
+    "cowbell": 56,
+    "splash": 55,
+    "tambourine": 54,
+    "rideCymbal2": 59
+  },
+  "patterns": [
+    {
+      "id": "swing-ride",
+      "name": "Swing, ride",
+      "meter": "4/4",
+      "bars": 1,
+      "role": "groove",
+      "intensity": [
+        0,
+        70
+      ],
+      "hits": [
+        {
+          "instrument": "ride",
+          "beat": 0.0,
+          "velocity": 96
+        },
+        {
+          "instrument": "ride",
+          "beat": 1.0,
+          "velocity": 78
+        },
+        {
+          "instrument": "ride",
+          "beat": 1.66,
+          "velocity": 68,
+          "chance": 0.9
+        },
+        {
+          "instrument": "ride",
+          "beat": 2.0,
+          "velocity": 88
+        },
+        {
+          "instrument": "ride",
+          "beat": 3.0,
+          "velocity": 78
+        },
+        {
+          "instrument": "ride",
+          "beat": 3.66,
+          "velocity": 68,
+          "chance": 0.9
+        },
+        {
+          "instrument": "hiHatPedal",
+          "beat": 1.0,
+          "velocity": 72
+        },
+        {
+          "instrument": "hiHatPedal",
+          "beat": 3.0,
+          "velocity": 72
+        }
+      ]
+    },
+    {
+      "id": "swing-ride-comping",
+      "name": "Swing, ride and comping",
+      "meter": "4/4",
+      "bars": 2,
+      "role": "groove",
+      "intensity": [
+        40,
+        100
+      ],
+      "hits": [
+        {
+          "instrument": "ride",
+          "beat": 0.0,
+          "velocity": 96
+        },
+        {
+          "instrument": "ride",
+          "beat": 1.0,
+          "velocity": 78
+        },
+        {
+          "instrument": "ride",
+          "beat": 1.66,
+          "velocity": 68,
+          "chance": 0.9
+        },
+        {
+          "instrument": "ride",
+          "beat": 2.0,
+          "velocity": 88
+        },
+        {
+          "instrument": "ride",
+          "beat": 3.0,
+          "velocity": 78
+        },
+        {
+          "instrument": "ride",
+          "beat": 3.66,
+          "velocity": 68,
+          "chance": 0.9
+        },
+        {
+          "instrument": "hiHatPedal",
+          "beat": 1.0,
+          "velocity": 72
+        },
+        {
+          "instrument": "hiHatPedal",
+          "beat": 3.0,
+          "velocity": 72
+        },
+        {
+          "instrument": "snare",
+          "beat": 0.66,
+          "velocity": 52,
+          "chance": 0.4
+        },
+        {
+          "instrument": "snare",
+          "beat": 2.66,
+          "velocity": 56,
+          "chance": 0.5
+        },
+        {
+          "instrument": "kick",
+          "beat": 3.5,
+          "velocity": 60,
+          "chance": 0.35
+        },
+        {
+          "instrument": "ride",
+          "beat": 4.0,
+          "velocity": 96
+        },
+        {
+          "instrument": "ride",
+          "beat": 5.0,
+          "velocity": 78
+        },
+        {
+          "instrument": "ride",
+          "beat": 5.66,
+          "velocity": 68,
+          "chance": 0.9
+        },
+        {
+          "instrument": "ride",
+          "beat": 6.0,
+          "velocity": 88
+        },
+        {
+          "instrument": "ride",
+          "beat": 7.0,
+          "velocity": 78
+        },
+        {
+          "instrument": "ride",
+          "beat": 7.66,
+          "velocity": 68,
+          "chance": 0.9
+        },
+        {
+          "instrument": "hiHatPedal",
+          "beat": 5.0,
+          "velocity": 72
+        },
+        {
+          "instrument": "hiHatPedal",
+          "beat": 7.0,
+          "velocity": 72
+        },
+        {
+          "instrument": "snare",
+          "beat": 4.66,
+          "velocity": 52,
+          "chance": 0.4
+        },
+        {
+          "instrument": "snare",
+          "beat": 6.66,
+          "velocity": 56,
+          "chance": 0.5
+        },
+        {
+          "instrument": "kick",
+          "beat": 7.5,
+          "velocity": 60,
+          "chance": 0.35
+        }
+      ]
+    },
+    {
+      "id": "swing-brushes",
+      "name": "Swing, brushes",
+      "meter": "4/4",
+      "bars": 1,
+      "role": "groove",
+      "intensity": [
+        0,
+        45
+      ],
+      "hits": [
+        {
+          "instrument": "hiHatClosed",
+          "beat": 0.0,
+          "velocity": 62
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 1.0,
+          "velocity": 48
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 1.66,
+          "velocity": 42,
+          "chance": 0.8
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 2.0,
+          "velocity": 58
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 3.0,
+          "velocity": 48
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 3.66,
+          "velocity": 42,
+          "chance": 0.8
+        },
+        {
+          "instrument": "sideStick",
+          "beat": 2.0,
+          "velocity": 54,
+          "chance": 0.6
+        }
+      ]
+    },
+    {
+      "id": "bossa",
+      "name": "Bossa nova",
+      "meter": "4/4",
+      "bars": 2,
+      "role": "groove",
+      "intensity": [
+        0,
+        100
+      ],
+      "hits": [
+        {
+          "instrument": "hiHatClosed",
+          "beat": 0.0,
+          "velocity": 70
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 0.5,
+          "velocity": 55
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 1.0,
+          "velocity": 62
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 1.5,
+          "velocity": 55
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 2.0,
+          "velocity": 68
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 2.5,
+          "velocity": 55
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 3.0,
+          "velocity": 62
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 3.5,
+          "velocity": 55
+        },
+        {
+          "instrument": "sideStick",
+          "beat": 0.0,
+          "velocity": 78
+        },
+        {
+          "instrument": "sideStick",
+          "beat": 1.5,
+          "velocity": 70
+        },
+        {
+          "instrument": "kick",
+          "beat": 0.0,
+          "velocity": 84
+        },
+        {
+          "instrument": "kick",
+          "beat": 1.5,
+          "velocity": 72
+        },
+        {
+          "instrument": "kick",
+          "beat": 2.0,
+          "velocity": 80
+        },
+        {
+          "instrument": "kick",
+          "beat": 3.5,
+          "velocity": 72
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 4.0,
+          "velocity": 70
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 4.5,
+          "velocity": 55
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 5.0,
+          "velocity": 62
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 5.5,
+          "velocity": 55
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 6.0,
+          "velocity": 68
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 6.5,
+          "velocity": 55
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 7.0,
+          "velocity": 62
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 7.5,
+          "velocity": 55
+        },
+        {
+          "instrument": "sideStick",
+          "beat": 4.5,
+          "velocity": 72
+        },
+        {
+          "instrument": "sideStick",
+          "beat": 6.0,
+          "velocity": 76
+        },
+        {
+          "instrument": "kick",
+          "beat": 4.0,
+          "velocity": 84
+        },
+        {
+          "instrument": "kick",
+          "beat": 5.5,
+          "velocity": 72
+        },
+        {
+          "instrument": "kick",
+          "beat": 6.0,
+          "velocity": 80
+        },
+        {
+          "instrument": "kick",
+          "beat": 7.5,
+          "velocity": 72
+        }
+      ]
+    },
+    {
+      "id": "straight-eight",
+      "name": "Straight eighths",
+      "meter": "4/4",
+      "bars": 1,
+      "role": "groove",
+      "intensity": [
+        0,
+        100
+      ],
+      "hits": [
+        {
+          "instrument": "hiHatClosed",
+          "beat": 0.0,
+          "velocity": 82
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 0.5,
+          "velocity": 60
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 1.0,
+          "velocity": 72
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 1.5,
+          "velocity": 60
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 2.0,
+          "velocity": 78
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 2.5,
+          "velocity": 60
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 3.0,
+          "velocity": 72
+        },
+        {
+          "instrument": "hiHatClosed",
+          "beat": 3.5,
+          "velocity": 60
+        },
+        {
+          "instrument": "kick",
+          "beat": 0.0,
+          "velocity": 100
+        },
+        {
+          "instrument": "kick",
+          "beat": 2.5,
+          "velocity": 88,
+          "chance": 0.7
+        },
+        {
+          "instrument": "snare",
+          "beat": 1.0,
+          "velocity": 96
+        },
+        {
+          "instrument": "snare",
+          "beat": 3.0,
+          "velocity": 96
+        }
+      ]
+    },
+    {
+      "id": "waltz",
+      "name": "Jazz waltz",
+      "meter": "3/4",
+      "bars": 1,
+      "role": "groove",
+      "intensity": [
+        0,
+        100
+      ],
+      "hits": [
+        {
+          "instrument": "ride",
+          "beat": 0.0,
+          "velocity": 92
+        },
+        {
+          "instrument": "ride",
+          "beat": 1.0,
+          "velocity": 70
+        },
+        {
+          "instrument": "ride",
+          "beat": 1.66,
+          "velocity": 62,
+          "chance": 0.8
+        },
+        {
+          "instrument": "ride",
+          "beat": 2.0,
+          "velocity": 78
+        },
+        {
+          "instrument": "hiHatPedal",
+          "beat": 1.0,
+          "velocity": 68
+        },
+        {
+          "instrument": "hiHatPedal",
+          "beat": 2.0,
+          "velocity": 68
+        }
+      ]
+    },
+    {
+      "id": "fill-snare",
+      "name": "Snare fill",
+      "meter": "4/4",
+      "bars": 1,
+      "role": "fill",
+      "intensity": [
+        0,
+        70
+      ],
+      "hits": [
+        {
+          "instrument": "ride",
+          "beat": 0.0,
+          "velocity": 88
+        },
+        {
+          "instrument": "ride",
+          "beat": 1.0,
+          "velocity": 74
+        },
+        {
+          "instrument": "snare",
+          "beat": 2.0,
+          "velocity": 84
+        },
+        {
+          "instrument": "snare",
+          "beat": 2.5,
+          "velocity": 70
+        },
+        {
+          "instrument": "snare",
+          "beat": 3.0,
+          "velocity": 88
+        },
+        {
+          "instrument": "snare",
+          "beat": 3.5,
+          "velocity": 76
+        }
+      ]
+    },
+    {
+      "id": "fill-toms",
+      "name": "Tom fill",
+      "meter": "4/4",
+      "bars": 1,
+      "role": "fill",
+      "intensity": [
+        50,
+        100
+      ],
+      "hits": [
+        {
+          "instrument": "snare",
+          "beat": 2.0,
+          "velocity": 90
+        },
+        {
+          "instrument": "snare",
+          "beat": 2.5,
+          "velocity": 76
+        },
+        {
+          "instrument": "tomHigh",
+          "beat": 3.0,
+          "velocity": 92
+        },
+        {
+          "instrument": "tomMid",
+          "beat": 3.33,
+          "velocity": 88
+        },
+        {
+          "instrument": "tomLow",
+          "beat": 3.66,
+          "velocity": 96
+        }
+      ]
+    },
+    {
+      "id": "fill-waltz",
+      "name": "Waltz fill",
+      "meter": "3/4",
+      "bars": 1,
+      "role": "fill",
+      "intensity": [
+        0,
+        100
+      ],
+      "hits": [
+        {
+          "instrument": "ride",
+          "beat": 0.0,
+          "velocity": 88
+        },
+        {
+          "instrument": "snare",
+          "beat": 1.0,
+          "velocity": 84
+        },
+        {
+          "instrument": "snare",
+          "beat": 1.66,
+          "velocity": 74
+        },
+        {
+          "instrument": "tomLow",
+          "beat": 2.0,
+          "velocity": 92
+        },
+        {
+          "instrument": "tomHigh",
+          "beat": 2.66,
+          "velocity": 86
+        }
+      ]
+    },
+    {
+      "id": "ending-crash",
+      "name": "Ending",
+      "meter": "4/4",
+      "bars": 1,
+      "role": "ending",
+      "intensity": [
+        0,
+        100
+      ],
+      "hits": [
+        {
+          "instrument": "crash",
+          "beat": 0.0,
+          "velocity": 110
+        },
+        {
+          "instrument": "kick",
+          "beat": 0.0,
+          "velocity": 104
+        },
+        {
+          "instrument": "snare",
+          "beat": 0.0,
+          "velocity": 96
+        }
+      ]
+    },
+    {
+      "id": "ending-waltz",
+      "name": "Ending, waltz",
+      "meter": "3/4",
+      "bars": 1,
+      "role": "ending",
+      "intensity": [
+        0,
+        100
+      ],
+      "hits": [
+        {
+          "instrument": "crash",
+          "beat": 0.0,
+          "velocity": 110
+        },
+        {
+          "instrument": "kick",
+          "beat": 0.0,
+          "velocity": 104
+        }
+      ]
+    }
+  ]
+}

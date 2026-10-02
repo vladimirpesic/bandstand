@@ -1,0 +1,5 @@
+# The recommended soundbank, fetched on demand rather than bundled
+# (docs/rules/bank-download.md). LFS keeps 148 MB out of every clone's
+# working tree by default and serves it through a CDN that answers
+# Range requests, which resuming a download needs.
+soundfonts/*.sf2 filter=lfs diff=lfs merge=lfs -text
