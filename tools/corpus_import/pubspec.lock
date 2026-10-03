@@ -47,7 +47,7 @@ packages:
       path: "../../app"
       relative: true
     source: path
-    version: "0.1.0+1"
+    version: "1.0.0+1"
   barcode:
     dependency: transitive
     description:
