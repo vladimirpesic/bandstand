@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The launcher as Android 8+ shapes it: the brand dark behind, the amber
+     mark in the foreground's safe zone, and the same mark as the themed
+     (monochrome) icon launchers tint themselves. Legacy raster icons are in
+     the mipmap-* directories for anything that asks for the pre-26 form. -->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/ic_launcher_background"/>
+    <foreground android:drawable="@mipmap/ic_launcher_foreground"/>
+    <monochrome android:drawable="@mipmap/ic_launcher_foreground"/>
+</adaptive-icon>

@@ -1,0 +1,445 @@
+{
+  "schemaVersion": 1,
+  "documentation": "docs/format/scales.md",
+  "note": "`preferredFor` lists the chord types a player would normally reach for this scale over. It is a hint for the improvisation display (§9, M8) and for voicing choices (§6.5), not a constraint: ScaleType.fits() answers structurally, by checking that every chord tone is in the scale.",
+  "scales": [
+    {
+      "name": "Ionian",
+      "aliases": [
+        "Ionian",
+        "Major"
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "preferredFor": [
+        "maj7",
+        "6",
+        "maj9",
+        "69",
+        "maj13",
+        ""
+      ]
+    },
+    {
+      "name": "Dorian",
+      "aliases": [
+        "Dorian"
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "b3",
+        "4",
+        "5",
+        "6",
+        "b7"
+      ],
+      "preferredFor": [
+        "m7",
+        "m9",
+        "m11",
+        "m13",
+        "m6",
+        "m69",
+        "m"
+      ]
+    },
+    {
+      "name": "Phrygian",
+      "aliases": [
+        "Phrygian"
+      ],
+      "degrees": [
+        "1",
+        "b2",
+        "b3",
+        "4",
+        "5",
+        "b6",
+        "b7"
+      ],
+      "preferredFor": [
+        "m7",
+        "m"
+      ]
+    },
+    {
+      "name": "Lydian",
+      "aliases": [
+        "Lydian"
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "3",
+        "#4",
+        "5",
+        "6",
+        "7"
+      ],
+      "preferredFor": [
+        "maj7",
+        "maj9",
+        "maj13"
+      ]
+    },
+    {
+      "name": "Mixolydian",
+      "aliases": [
+        "Mixolydian"
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "b7"
+      ],
+      "preferredFor": [
+        "7",
+        "9",
+        "13",
+        "7sus4",
+        "9sus4",
+        "13sus4"
+      ]
+    },
+    {
+      "name": "Aeolian",
+      "aliases": [
+        "Aeolian",
+        "Natural minor"
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "b3",
+        "4",
+        "5",
+        "b6",
+        "b7"
+      ],
+      "preferredFor": [
+        "m7",
+        "m9",
+        "m11",
+        "m"
+      ]
+    },
+    {
+      "name": "Locrian",
+      "aliases": [
+        "Locrian"
+      ],
+      "degrees": [
+        "1",
+        "b2",
+        "b3",
+        "4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "preferredFor": [
+        "m7b5",
+        "m11b5"
+      ]
+    },
+    {
+      "name": "Locrian #2",
+      "aliases": [
+        "Locrian #2",
+        "Half diminished"
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "b3",
+        "4",
+        "b5",
+        "b6",
+        "b7"
+      ],
+      "preferredFor": [
+        "m7b5",
+        "m9b5"
+      ]
+    },
+    {
+      "name": "Melodic minor",
+      "aliases": [
+        "Melodic minor",
+        "Jazz minor"
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "b3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "preferredFor": [
+        "mMaj7",
+        "mMaj9",
+        "m6",
+        "m69"
+      ]
+    },
+    {
+      "name": "Lydian dominant",
+      "aliases": [
+        "Lydian dominant",
+        "Lydian b7",
+        "Mixolydian #11"
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "3",
+        "#4",
+        "5",
+        "6",
+        "b7"
+      ],
+      "preferredFor": [
+        "7",
+        "9",
+        "13"
+      ]
+    },
+    {
+      "name": "Altered",
+      "aliases": [
+        "Altered",
+        "Super Locrian",
+        "Diminished whole tone"
+      ],
+      "degrees": [
+        "1",
+        "b2",
+        "#2",
+        "3",
+        "#4",
+        "#5",
+        "b7"
+      ],
+      "preferredFor": [
+        "7alt",
+        "7#5",
+        "9#5",
+        "7b5"
+      ]
+    },
+    {
+      "name": "Harmonic minor",
+      "aliases": [
+        "Harmonic minor"
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "b3",
+        "4",
+        "5",
+        "b6",
+        "7"
+      ],
+      "preferredFor": [
+        "mMaj7",
+        "m",
+        "mMaj9"
+      ]
+    },
+    {
+      "name": "Phrygian dominant",
+      "aliases": [
+        "Phrygian dominant",
+        "Mixolydian b9b13",
+        "Spanish"
+      ],
+      "degrees": [
+        "1",
+        "b2",
+        "3",
+        "4",
+        "5",
+        "b6",
+        "b7"
+      ],
+      "preferredFor": [
+        "7",
+        "7b9"
+      ]
+    },
+    {
+      "name": "Lydian augmented",
+      "aliases": [
+        "Lydian augmented"
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "3",
+        "#4",
+        "#5",
+        "6",
+        "7"
+      ],
+      "preferredFor": [
+        "maj7#5",
+        "+"
+      ]
+    },
+    {
+      "name": "Whole tone",
+      "aliases": [
+        "Whole tone"
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "3",
+        "#4",
+        "#5",
+        "b7"
+      ],
+      "preferredFor": [
+        "7#5",
+        "9#5",
+        "+"
+      ]
+    },
+    {
+      "name": "Half-whole diminished",
+      "aliases": [
+        "Half-whole diminished",
+        "Dominant diminished"
+      ],
+      "degrees": [
+        "1",
+        "b2",
+        "#2",
+        "3",
+        "#4",
+        "5",
+        "6",
+        "b7"
+      ],
+      "preferredFor": [
+        "7b9",
+        "13b9",
+        "7#9"
+      ]
+    },
+    {
+      "name": "Whole-half diminished",
+      "aliases": [
+        "Whole-half diminished",
+        "Diminished"
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "b3",
+        "4",
+        "b5",
+        "b6",
+        "6",
+        "7"
+      ],
+      "preferredFor": [
+        "o7",
+        "o"
+      ]
+    },
+    {
+      "name": "Bebop dominant",
+      "aliases": [
+        "Bebop dominant"
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "b7",
+        "7"
+      ],
+      "preferredFor": [
+        "7",
+        "9",
+        "13"
+      ]
+    },
+    {
+      "name": "Major pentatonic",
+      "aliases": [
+        "Major pentatonic"
+      ],
+      "degrees": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "6"
+      ],
+      "preferredFor": [
+        "",
+        "6",
+        "maj7",
+        "69"
+      ]
+    },
+    {
+      "name": "Minor pentatonic",
+      "aliases": [
+        "Minor pentatonic"
+      ],
+      "degrees": [
+        "1",
+        "b3",
+        "4",
+        "5",
+        "b7"
+      ],
+      "preferredFor": [
+        "m7",
+        "m",
+        "m11"
+      ]
+    },
+    {
+      "name": "Blues",
+      "aliases": [
+        "Blues",
+        "Blues minor"
+      ],
+      "degrees": [
+        "1",
+        "b3",
+        "4",
+        "b5",
+        "5",
+        "b7"
+      ],
+      "preferredFor": [
+        "7",
+        "m7",
+        "9"
+      ]
+    }
+  ]
+}

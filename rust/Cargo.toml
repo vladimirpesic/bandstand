@@ -1,0 +1,53 @@
+# Root package of the Bandstand cargo workspace.
+#
+# This package is the `bandstand-ffi` crate of the original plan (§7.1): the
+# flutter_rust_bridge surface. It has to sit at the workspace root and be named
+# `rust_lib_bandstand`, because cargokit (the Flutter-side native build driver)
+# reads `<manifest_dir>/Cargo.toml` and derives the artifact filename
+# (`librust_lib_bandstand.so`) from `package.name`. See
+# `docs/decisions/0002-rust-workspace-layout.md`.
+[package]
+name = "rust_lib_bandstand"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.82"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[workspace]
+members = [
+    "bandstand-audio-host",
+    "bandstand-transport",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.82"
+publish = false
+
+[workspace.dependencies]
+bandstand-audio-host = { path = "bandstand-audio-host" }
+bandstand-transport = { path = "bandstand-transport" }
+cpal = "0.16"
+
+[dependencies]
+flutter_rust_bridge = "=2.13.0"
+bandstand-audio-host = { workspace = true }
+bandstand-transport = { workspace = true }
+# The decoder (ADR 0012): pure Rust, MP3/WAV/FLAC/OGG and friends, and the only
+# new third-party code the player needs. Symphonia 0.6's default feature set
+# carries the WAV/FLAC/OGG readers but not the MP3 one — without `mp3` named
+# here, every MP3 in the library answers "no suitable format reader found".
+symphonia = { version = "0.6", features = ["mp3"] }
+
+# Android only. Oboe reaches the platform through JNI and asks `ndk_context`
+# for the JavaVM and the Context; nothing in a Flutter app's load path supplies
+# them, so Bandstand does (ADR 0009, `docs/rules/android-audio.md` §1). Both
+# crates already arrive through `cpal → oboe`, so this adds a name to a manifest
+# rather than code to the binary.
+[target.'cfg(target_os = "android")'.dependencies]
+jni = "0.21"
+ndk-context = "0.1"
