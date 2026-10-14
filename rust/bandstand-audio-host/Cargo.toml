@@ -1,0 +1,22 @@
+[package]
+name = "bandstand-audio-host"
+description = "Audio device enumeration and output stream setup for Bandstand."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+cpal = { workspace = true }
+bandstand-transport = { workspace = true }
+
+[target.'cfg(target_os = "android")'.dependencies]
+cpal = { workspace = true, features = ["oboe-shared-stdcxx"] }
+
+[lints.rust]
+missing_docs = "warn"
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+module_name_repetitions = "allow"

@@ -1,0 +1,161 @@
+# Release binaries.
+#
+# One job per supported platform (Linux desktop and Android — no other
+# platform has scaffolding, §1). Both reuse the Justfile recipes, so CI builds
+# exactly what the README documents. The MEGA folder link is a runtime setting
+# of the app, not a build input (ADR 0013): these builds need no secrets and
+# reach the network only for toolchain downloads. Artifacts land on the run
+# page; on this public repo they are downloadable by anyone, and contain
+# nothing private.
+
+name: release
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+
+# A newer push supersedes the run it starts; no point finishing the old one.
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  linux:
+    name: gates + Linux x64 bundle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # clippy/rustfmt must be named: this action installs --profile minimal,
+      # and `just rust-check` runs `cargo fmt`/`cargo clippy`.
+      - uses: dtolnay/rust-toolchain@1.99.0
+        with:
+          components: clippy, rustfmt
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: rust
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 3.47.7
+          channel: stable
+          cache: true
+
+      - name: Install the README "Building" toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libasound2-dev
+
+      - name: Install just
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to "$HOME/.local/bin"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Gates (rust-check + dart-check)
+        run: just check
+
+      - name: Read the app version
+        id: version
+        run: |
+          echo "version=$(sed -n 's/^version: \(.*\)+.*/\1/p' app/pubspec.yaml)" >> "$GITHUB_OUTPUT"
+
+      - name: Build the release bundle
+        run: |
+          just build-linux
+          tar -czf "Bandstand-${{ steps.version.outputs.version }}-linux-x64.tar.gz" -C app/build/linux/x64/release bundle
+
+      - name: Upload the bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: bandstand-linux-x64
+          path: Bandstand-*-linux-x64.tar.gz
+          if-no-files-found: error
+
+  android:
+    name: Android APK
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@1.99.0
+        with:
+          targets: aarch64-linux-android,armv7-linux-androideabi,i686-linux-android,x86_64-linux-android
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: rust
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 3.47.7
+          channel: stable
+          cache: true
+
+      # AGP 9.1 needs JDK 17+; 21 is the middle of its supported range.
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Install just
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to "$HOME/.local/bin"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Build the release APK
+        run: just build-android
+
+      - name: 16 KB page-alignment gate on the packaged native libraries
+        run: just android-check build/app/outputs/flutter-apk/app-release.apk
+
+      - name: Read the app version
+        id: version
+        run: |
+          echo "version=$(sed -n 's/^version: \(.*\)+.*/\1/p' app/pubspec.yaml)" >> "$GITHUB_OUTPUT"
+
+      - name: Stage the artifact
+        run: cp app/build/app/outputs/flutter-apk/app-release.apk "Bandstand-${{ steps.version.outputs.version }}-android.apk"
+
+      - name: Upload the APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: bandstand-android-apk
+          path: Bandstand-*-android.apk
+          if-no-files-found: error
+
+  # On a `v*` tag only: publish the binaries GitHub-side. Artifacts above are
+  # run-scoped; a Release is the durable, linkable home for the binaries.
+  release:
+    name: publish
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [linux, android]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+      - name: Publish
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Bandstand ${{ github.ref_name }}
+          body: |
+            The personal Aebersold practice player — browse the library over a
+            public MEGA folder link entered in-app, cache it locally, play it
+            with channel isolation, read the books (ADR 0012).
+
+            - Linux x64: unpack the tarball and run `bundle/bandstand`.
+            - Android: sideload the APK; it is debug-signed, so allow installs
+              from unknown sources. Requires Android 8.0 (API 26).
+
+            Nothing is bundled with the app: the MEGA folder link is a runtime
+            setting, not part of the download.
+          files: |
+            Bandstand-*-linux-x64.tar.gz
+            Bandstand-*-android.apk
+          fail_on_unmatched_files: true

@@ -1,0 +1,33 @@
+# Build output
+app/build/
+.dart_tool/
+app/.flutter-plugins-dependencies
+app/linux/flutter/ephemeral/
+app/android/.gradle/
+app/android/local.properties
+rust/target/
+target/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.mypy_cache/
+__pycache__/
+*.swp
+.DS_Store
+
+# Dart / Flutter misc
+**/doc/api/
+app/coverage/
+app.*.symbols
+app.*.map.json
+.widget_preview/
+
+# Local library / user data (never committed)
+renders/
+# The MEGA folder link for the live smoke test: bearer secret, runtime-only.
+.env
+
+# Scratch build output that is not source: integration logs, fetched corpora.
+/build/
